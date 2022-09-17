@@ -1,17 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
-const NavBar = () => {
+const NavBar = ({ scrollIndex }) => {
   return (
-    <div>
-      <NavBox>
-        <ul>
-          <li>FIRST</li>
-          <li>SECOND</li>
-          <li>THIRD</li>
-        </ul>
-      </NavBox>
-    </div>
+    <NavBox>
+      <ul>
+        <Nav style={{ color: scrollIndex === 1 ? "white" : "#3452BE" }}>
+          FIRST
+        </Nav>
+        <Nav style={{ color: scrollIndex === 2 ? "white" : "#3452BE" }}>
+          SECOND
+        </Nav>
+        <Nav style={{ color: scrollIndex === 3 ? "white" : "#3452BE" }}>
+          THIRD
+        </Nav>
+      </ul>
+    </NavBox>
   );
 };
 
@@ -20,13 +24,12 @@ const NavBox = styled.div`
   width: 100%;
   height: 10rem;
   line-height: 10rem;
-  li {
-    float: left;
-    margin-left: 5rem;
-    font-size: 2rem;
-    font-weight: 800;
-    color: #3452be;
-  }
+`;
+const Nav = styled.li`
+  float: left;
+  margin-left: 5rem;
+  font-size: 2rem;
+  font-weight: 800;
 `;
 
 export default NavBar;

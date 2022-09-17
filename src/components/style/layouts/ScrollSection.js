@@ -20,5 +20,5 @@ export const Inner = styled.div`
 export const Divider = styled.div`
   width: 100%;
   height: 5px;
-  background-color: gray;
+  background-color: #273D8E;
 `;
