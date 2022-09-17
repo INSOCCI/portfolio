@@ -22,8 +22,8 @@ const NavBar = ({ scrollIndex }) => {
 const NavBox = styled.div`
   position: fixed;
   width: 100%;
-  height: 10rem;
-  line-height: 10rem;
+  height: 12rem;
+  line-height: 12rem;
 `;
 const Nav = styled.li`
   float: left;
