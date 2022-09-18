@@ -23,10 +23,10 @@ const Wrap = styled(Inner)`
 const Main = styled.div`
   width: fit-content;
   border: #d6bb4e solid 1rem;
-  margin-top: 7rem;
+  margin-top: 4rem;
   img {
-    width: 1500px;
-    height: 650px;
+    width: 1320px;
+    height: 600px;
   }
 `;
 const Text = styled.div`

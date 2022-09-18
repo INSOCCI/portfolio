@@ -8,7 +8,7 @@ const NavBar = ({ scrollIndex }) => {
         <Nav style={{ color: scrollIndex === 1 ? "white" : "#3452BE" }}>
           FIRST
         </Nav>
-        <Nav style={{ color: scrollIndex === 2 ? "white" : "#3452BE" }}>
+        <Nav style={{ color: scrollIndex === 2 ? "#fff" : "#3452BE" }}>
           SECOND
         </Nav>
         <Nav style={{ color: scrollIndex === 3 ? "white" : "#3452BE" }}>
@@ -21,6 +21,7 @@ const NavBar = ({ scrollIndex }) => {
 
 const NavBox = styled.div`
   position: fixed;
+  z-index: 99;
   width: 100%;
   height: 12rem;
   line-height: 12rem;
